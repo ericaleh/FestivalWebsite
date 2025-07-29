@@ -4,8 +4,7 @@ export default function Artists() {
       {/* Header Image */}
       <section className="relative h-64 md:h-96 overflow-hidden">
         {/* Header image */}
-        <img src="/artists.png" alt="Artists at Flights & Sounds" className="absolute inset-0 w-full h-full object-cover" />
-        {/* Overlay with text */}
+        <img src="/artists.png" alt="About Flights & Sounds" className="absolute inset-0 w-full h-full object-cover bg-[#EDDEB7]" />
       </section>
 
       {/* Content Section */}

@@ -4,7 +4,7 @@ export default function Contact() {
       {/* Header Image */}
       <section className="relative h-64 md:h-96 overflow-hidden">
         {/* Header image */}
-        <img src="/contact.png" alt="Contact Flights & Sounds" className="absolute inset-0 w-full h-full object-cover" />
+        <img src="/contact.png" alt="Contact Flights & Sounds" className="absolute inset-0 w-full h-full object-cover bg-[#EDDEB7]" />
         {/* Overlay with text */}
       </section>
 
