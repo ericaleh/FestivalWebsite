@@ -1,9 +1,10 @@
 {
-  "name": "festival-website",
+  "name": "flights-and-sounds-festival",
   "version": "0.1.0",
   "private": true,
+  "description": "A festival fostering connection and community through music, art, nature, and performance",
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
