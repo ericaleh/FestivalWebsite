@@ -9,8 +9,8 @@ export default function Performers() {
             <p className="text-lg md:text-xl font-sans">Experience the magic of live performance</p>
           </div>
         </div>
-        {/* Placeholder for header image */}
-        {/* <img src="/performers.jpg" alt="Performers at Flights & Sounds" className="w-full h-full object-cover" /> */}
+        {/* Header image */}
+        <img src="/performers.png" alt="Performers at Flights & Sounds" className="w-full h-full object-cover" />
       </section>
 
       {/* Content Section */}

@@ -9,8 +9,8 @@ export default function Contact() {
             <p className="text-lg md:text-xl font-sans">Get in touch with our team</p>
           </div>
         </div>
-        {/* Placeholder for header image */}
-        {/* <img src="/contact.jpg" alt="Contact Flights & Sounds" className="w-full h-full object-cover" /> */}
+        {/* Header image */}
+        <img src="/contact.png" alt="Contact Flights & Sounds" className="w-full h-full object-cover" />
       </section>
 
       {/* Content Section */}

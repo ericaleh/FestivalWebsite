@@ -9,8 +9,8 @@ export default function Artists() {
             <p className="text-lg md:text-xl font-sans">Discover the incredible talent</p>
           </div>
         </div>
-        {/* Placeholder for header image */}
-        {/* <img src="/artists.jpg" alt="Artists at Flights & Sounds" className="w-full h-full object-cover" /> */}
+        {/* Header image */}
+        <img src="/artists.png" alt="Artists at Flights & Sounds" className="w-full h-full object-cover" />
       </section>
 
       {/* Content Section */}
