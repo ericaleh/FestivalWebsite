@@ -6,7 +6,7 @@ export default function Home() {
           autoPlay
           muted
           playsInline
-          className="inset-0 w-full object-cover object-top"
+          className="inset-0 w-full h-64 md:h-96 object-cover object-top"
         >
           {/*<source src="/cirra music notes flying.mp4" type="video/mp4" />*/}
           <source src="/growing_video.mp4" type="video/mp4" />
