@@ -9,7 +9,7 @@ export default function Home() {
           className="inset-0 w-full object-cover object-top"
         >
           {/*<source src="/cirra music notes flying.mp4" type="video/mp4" />*/}
-          <source src="/f&s growing video.mp4" type="video/mp4" />
+          <source src="/growing_video.mp4" type="video/mp4" />
           {/* Fallback for browsers that don't support video */}
         </video>
                 
