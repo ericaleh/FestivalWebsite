@@ -3,14 +3,9 @@ export default function Contact() {
     <div className="min-h-screen">
       {/* Header Image */}
       <section className="relative h-64 md:h-96 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#432C2C] via-[#566E37] to-[#934D2F] flex items-center justify-center">
-          <div className="text-center text-white">
-            <h1 className="text-4xl md:text-6xl font-bold font-serif mb-4">Contact Us</h1>
-            <p className="text-lg md:text-xl font-sans">Get in touch with our team</p>
-          </div>
-        </div>
         {/* Header image */}
-        <img src="/contact.png" alt="Contact Flights & Sounds" className="w-full h-full object-cover" />
+        <img src="/contact.png" alt="Contact Flights & Sounds" className="absolute inset-0 w-full h-full object-cover" />
+        {/* Overlay with text */}
       </section>
 
       {/* Content Section */}
