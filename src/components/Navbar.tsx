@@ -45,10 +45,10 @@ export default function Navbar() {
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-[#FFF8D9] hover:text-[#ECD35A] focus:outline-none focus:text-[#ECD35A]"
-            >
+                          <button
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className="text-[#245451] hover:text-[#934D2F] focus:outline-none focus:text-[#934D2F]"
+              >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isMenuOpen ? (
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -63,31 +63,31 @@ export default function Navbar() {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-[#432C2C]/95">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <Link 
                 href="/about" 
-                className="text-[20px] text-[#FFF8D9] hover:text-[#ECD35A] block px-3 py-2 font-dwpica"
+                className="text-[20px] text-[#245451] hover:text-[#245451] block px-3 py-2 font-dwpica"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
               </Link>
               <Link 
                 href="/artists" 
-                className="text-[20px] text-[#FFF8D9] hover:text-[#ECD35A] block px-3 py-2 font-dwpica"
+                className="text-[20px] text-[#245451] hover:text-[#ECD35A] block px-3 py-2 font-dwpica"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Artists
               </Link>
               <Link 
                 href="/performers" 
-                className="text-[20px] text-[#FFF8D9] hover:text-[#ECD35A] block px-3 py-2 font-dwpica"
+                className="text-[20px] text-[#245451] hover:text-[#ECD35A] block px-3 py-2 font-dwpica"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Performers
               </Link>
               <Link 
                 href="/contact" 
-                className="text-[20px] text-[#FFF8D9] hover:text-[#ECD35A] block px-3 py-2 font-dwpica"
+                className="text-[20px] text-[#245451] hover:text-[#ECD35A] block px-3 py-2 font-dwpica"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact Us
