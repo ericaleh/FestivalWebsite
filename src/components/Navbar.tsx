@@ -12,7 +12,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <img src="/logo2.png" alt="Flights & Sounds" className="h-8 md:h-10 w-auto" />
+            <img src="/logo3.png" alt="Flights & Sounds" className="h-8 md:h-10 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
