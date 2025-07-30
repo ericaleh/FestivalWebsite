@@ -14,11 +14,11 @@ export default function Artists() {
 
             <p className="text-[20px] text-[#245451] font-dwpica max-w-2xl mx-auto">
               Our festival brings together an eclectic mix of talented artists from various genres and backgrounds. 
-              Each artist has been carefully selected to create a diverse and engaging experience for our attendees.
+              Each artist has been carefully selected to create a unique and engaging experience for our attendees.
             </p>
           </div>
 
-          <div className="text-center mt-2">
+          <div className="text-center mt-2"><br></br>
             <p className="text-[20px] text-[#245451] font-dwpica">
               Artists will be announced in 2026. Stay tuned for updates!
             </p>
