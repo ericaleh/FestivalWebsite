@@ -2,12 +2,12 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#432C2C] text-[#FFF8D9] py-12">
+    <footer className="bg-[#245451] text-[#FFF8D9] py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Festival Info */}
           <div>
-            <h3 className="text-xl font-gothic font-bold mb-4">Flights & Sounds</h3>
+            <h3 className="text-xl font-imfell font-bold mb-4">Flights & Sounds</h3>
             <p className="text-[#D9C178] font-sans">
               Fostering connection and community through music, art, nature, and performance.
             </p>
@@ -49,7 +49,7 @@ export default function Footer() {
             <div className="mt-4">
               <Link 
                 href="/contact" 
-                className="inline-block bg-[#EA902B] text-[#432C2C] px-6 py-2 rounded-md hover:bg-[#ECD35A] transition-colors duration-200 font-sans"
+                className="inline-block bg-[#D9C178] text-[#245451] px-6 py-2 rounded-md hover:bg-[#ECD35A] transition-colors duration-200 font-sans"
               >
                 Contact Us
               </Link>
@@ -57,7 +57,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-[#566E37] mt-8 pt-8 text-center">
+        <div className="border-t border-[#245451] mt-8 pt-8 text-center">
           <p className="text-[#93AD67] font-sans">
             © 2025 Flights & Sounds Festival. All rights reserved.
           </p>

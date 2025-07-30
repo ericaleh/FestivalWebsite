@@ -1,12 +1,20 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'IMFellFrenchCanon';
+  src: url('/IMFellFrenchCanon-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: #245451;
   --foreground: #FFF8D9;
   --primary: #D9C178;
-  --secondary: #566E37;
+  --secondary: #245451;
   --accent: #934D2F;
-  --dark: #566E37;
+  --dark: #245451;
   --orange: #EA902B;
   --yellow: #ECD35A;
   --green: #93AD67;
@@ -47,4 +55,8 @@ body {
 
 .font-sans {
   font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.font-imfell {
+  font-family: 'IMFellFrenchCanon', serif;
 }

@@ -4,7 +4,7 @@ export default function About() {
       {/* Header Image */}
       <section className="relative h-64 md:h-96 overflow-hidden">
         {/* Header image */}
-        <img src="/about.png" alt="About Flights & Sounds" className="absolute inset-0 w-full h-full object-cover bg-[#566E37]" />
+        <img src="/about.png" alt="About Flights & Sounds" className="absolute inset-0 w-full h-full object-cover bg-[#245451]" />
       </section>
 
       {/* Festival Description Section */}
