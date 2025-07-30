@@ -7,37 +7,37 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-[#432C2C]/90 backdrop-blur-sm fixed w-full z-50">
+    <nav className="bg-[#EDDEB6]/90 backdrop-blur-sm fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="text-[#FFF8D9] text-xl font-gothic font-bold">
-            Flights & Sounds
+          <Link href="/" className="flex items-center">
+            <img src="/logo.png" alt="Flights & Sounds" className="h-8 md:h-10 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             <Link 
               href="/about" 
-              className="text-[#FFF8D9] hover:text-[#ECD35A] transition-colors duration-200 font-gothic"
+              className="text-[#245451] hover:text-[#934D2F] transition-colors duration-200 font-gothic"
             >
               About
             </Link>
             <Link 
               href="/artists" 
-              className="text-[#FFF8D9] hover:text-[#ECD35A] transition-colors duration-200 font-gothic"
+              className="text-[#245451] hover:text-[#934D2F] transition-colors duration-200 font-gothic"
             >
               Artists
             </Link>
             <Link 
               href="/performers" 
-              className="text-[#FFF8D9] hover:text-[#ECD35A] transition-colors duration-200 font-gothic"
+              className="text-[#245451] hover:text-[#934D2F] transition-colors duration-200 font-gothic"
             >
               Performers
             </Link>
             <Link 
               href="/contact" 
-              className="text-[#FFF8D9] hover:text-[#ECD35A] transition-colors duration-200 font-gothic"
+              className="text-[#245451] hover:text-[#934D2F] transition-colors duration-200 font-gothic"
             >
               Contact Us
             </Link>
