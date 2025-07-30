@@ -7,7 +7,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-[#FFF8D8]/90 backdrop-blur-sm fixed w-full z-50">
+    <nav className="bg-[#B25E5D] backdrop-blur-sm fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -19,25 +19,25 @@ export default function Navbar() {
           <div className="hidden md:flex space-x-8">
             <Link 
               href="/about" 
-              className="text-[20px] text-[#245451] hover:text-[#934D2F] transition-colors duration-200 font-dwpica"
+              className="text-[20px] text-[#EDDEB7] hover:text-[#934D2F] transition-colors duration-200 font-dwpica"
             >
               About
             </Link>
             <Link 
               href="/artists" 
-              className="text-[20px] text-[#245451] hover:text-[#934D2F] transition-colors duration-200 font-dwpica"
+              className="text-[20px] text-[#EDDEB7] hover:text-[#934D2F] transition-colors duration-200 font-dwpica"
             >
               Artists
             </Link>
             <Link 
               href="/performers" 
-              className="text-[20px] text-[#245451] hover:text-[#934D2F] transition-colors duration-200 font-dwpica"
+              className="text-[20px] text-[#EDDEB7] hover:text-[#934D2F] transition-colors duration-200 font-dwpica"
             >
               Performers
             </Link>
             <Link 
               href="/contact" 
-              className="text-[20px] text-[#245451] hover:text-[#934D2F] transition-colors duration-200 font-dwpica"
+              className="text-[20px] text-[#EDDEB7] hover:text-[#934D2F] transition-colors duration-200 font-dwpica"
             >
               Contact Us
             </Link>

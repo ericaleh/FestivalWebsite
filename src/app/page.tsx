@@ -3,6 +3,8 @@ export default function About() {
     <div className="min-h-screen">
       {/* Header Image */}
       <div>
+        {/* Thick line separator */}
+        <div className="h-1/2 bg-[#245451]"></div>
         {/* Header image */}
         <img src="/hero2.png" alt="About Flights & Sounds" className="w-full h-auto object-contain object-top md:h-full md:object-cover bg-[#245451]" />
       </div>
