@@ -49,10 +49,9 @@ export default function Contact() {
   return (
     <div className="min-h-screen">
       {/* Header Image */}
-      <section className="relative h-64 md:h-96 overflow-hidden">
+      <section className="relative h-auto overflow-hidden">
         {/* Header image */}
-        <img src="/contact.png" alt="Contact Flights & Sounds" className="absolute inset-0 w-full h-full object-cover bg-[#EDDEB7]" />
-        {/* Overlay with text */}
+        <img src="/contact.png" alt="Contact Flights & Sounds" className="relative w-full h-auto object-contain object-top bg-[#EDDEB7]" />
       </section>
 
       {/* Content Section */}

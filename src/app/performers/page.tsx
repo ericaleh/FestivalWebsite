@@ -2,9 +2,9 @@ export default function Artists() {
   return (
     <div className="min-h-screen">
       {/* Header Image */}
-      <section className="relative h-64 md:h-96 overflow-hidden">
+      <section className="relative h-auto overflow-hidden">
         {/* Header image */}
-        <img src="/performers.png" alt="About Flights & Sounds" className="absolute inset-0 w-full h-full object-cover bg-[#EDDEB7]" />
+        <img src="/performers.png" alt="About Flights & Sounds" className="relative w-full h-auto object-contain object-top bg-[#EDDEB7]" />
       </section>
 
       {/* Content Section */}
