@@ -2,9 +2,9 @@ export default function About() {
   return (
     <div className="min-h-screen">
       {/* Header Image */}
-      <section className="relative h-64 md:h-96 overflow-hidden">
+      <section className="relative h-auto overflow-hidden">
         {/* Header image */}
-        <img src="/about.png" alt="About Flights & Sounds" className="absolute inset-0 w-full h-full object-cover bg-[#245451]" />
+        <img src="/about.png" alt="About Flights & Sounds" className="relative w-full h-auto object-contain object-top bg-[#245451]" />
       </section>
 
       {/* Festival Description Section */}
