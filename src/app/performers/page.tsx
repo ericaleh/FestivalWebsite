@@ -11,13 +11,12 @@ export default function Artists() {
       <section className="pt-16 pb-16 px-4 bg-[#ECDFB8]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center">
-            <p className="text-lg text-[#245451] font-sans max-w-2xl mx-auto">
-              Our festival brings together an eclectic mix of talented artists from various genres and backgrounds. 
-              Each artist has been carefully selected to create a diverse and engaging experience for our attendees.
+            <p className="text-[20px] text-[#245451] font-dwpica max-w-2xl mx-auto">
+              Our festival brings together an eclectic mix of talented performers, focused on aerial acrobatics and fire performance.
             </p>
           </div>
           <div className="text-center mt-2">
-            <p className="text-lg text-[#245451] font-sans">
+            <p className="text-[20px] text-[#245451] font-dwpica"><br></br>
               Artists will be announced in 2026. Stay tuned for updates!
             </p>
           </div>

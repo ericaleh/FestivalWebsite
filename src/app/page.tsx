@@ -36,7 +36,7 @@ export default function About() {
     <div className="min-h-screen">
       {/* Header Image */}
         {/* Header image */}
-        <img src="/hero.png" alt="About Flights & Sounds" className="absolute inset-0 w-full h-full object-cover bg-[#245451]" />
+        <img src="/hero2.png" alt="About Flights & Sounds" className="absolute inset-0 w-full h-full object-cover bg-[#245451]" />
               {/* Festival Description Section */}
       <section className="py-16 px-4 bg-[#EDDEB7]">
         <div className="max-w-6xl mx-auto">

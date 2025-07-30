@@ -12,32 +12,32 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <img src="/logo.png" alt="Flights & Sounds" className="h-8 md:h-10 w-auto" />
+            <img src="/logo2.png" alt="Flights & Sounds" className="h-8 md:h-10 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             <Link 
               href="/about" 
-              className="text-[#245451] hover:text-[#934D2F] transition-colors duration-200 font-gothic"
+              className="text-[20px] text-[#245451] hover:text-[#934D2F] transition-colors duration-200 font-dwpica"
             >
               About
             </Link>
             <Link 
               href="/artists" 
-              className="text-[#245451] hover:text-[#934D2F] transition-colors duration-200 font-gothic"
+              className="text-[20px] text-[#245451] hover:text-[#934D2F] transition-colors duration-200 font-dwpica"
             >
               Artists
             </Link>
             <Link 
               href="/performers" 
-              className="text-[#245451] hover:text-[#934D2F] transition-colors duration-200 font-gothic"
+              className="text-[20px] text-[#245451] hover:text-[#934D2F] transition-colors duration-200 font-dwpica"
             >
               Performers
             </Link>
             <Link 
               href="/contact" 
-              className="text-[#245451] hover:text-[#934D2F] transition-colors duration-200 font-gothic"
+              className="text-[20px] text-[#245451] hover:text-[#934D2F] transition-colors duration-200 font-dwpica"
             >
               Contact Us
             </Link>
@@ -66,28 +66,28 @@ export default function Navbar() {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-[#432C2C]/95">
               <Link 
                 href="/about" 
-                className="text-[#FFF8D9] hover:text-[#ECD35A] block px-3 py-2 font-gothic"
+                className="text-[20px] text-[#FFF8D9] hover:text-[#ECD35A] block px-3 py-2 font-dwpica"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
               </Link>
               <Link 
                 href="/artists" 
-                className="text-[#FFF8D9] hover:text-[#ECD35A] block px-3 py-2 font-gothic"
+                className="text-[20px] text-[#FFF8D9] hover:text-[#ECD35A] block px-3 py-2 font-dwpica"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Artists
               </Link>
               <Link 
                 href="/performers" 
-                className="text-[#FFF8D9] hover:text-[#ECD35A] block px-3 py-2 font-gothic"
+                className="text-[20px] text-[#FFF8D9] hover:text-[#ECD35A] block px-3 py-2 font-dwpica"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Performers
               </Link>
               <Link 
                 href="/contact" 
-                className="text-[#FFF8D9] hover:text-[#ECD35A] block px-3 py-2 font-gothic"
+                className="text-[20px] text-[#FFF8D9] hover:text-[#ECD35A] block px-3 py-2 font-dwpica"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact Us

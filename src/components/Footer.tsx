@@ -7,33 +7,33 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Festival Info */}
           <div>
-            <h3 className="text-xl font-imfell font-bold mb-4">Flights & Sounds</h3>
-            <p className="text-[#D9C178] font-sans">
+            <h3 className="text-[20px] font-imfell font-bold mb-4">Flights & Sounds</h3>
+            <p className="text-[16px] text-[#D9C178] font-dwpica">
               Fostering connection and community through music, art, nature, and performance.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-gothic font-semibold mb-4">Quick Links</h4>
+            <h4 className="text-[20px] font-imfell font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="text-[#D9C178] hover:text-[#FFF8D9] transition-colors duration-200 font-sans">
+                <Link href="/about" className="text-[16px] text-[#D9C178] hover:text-[#FFF8D9] transition-colors duration-200 font-dwpica">
                   About
                 </Link>
               </li>
               <li>
-                <Link href="/artists" className="text-[#D9C178] hover:text-[#FFF8D9] transition-colors duration-200 font-sans">
+                <Link href="/artists" className="text-[16px] text-[#D9C178] hover:text-[#FFF8D9] transition-colors duration-200 font-dwpica">
                   Artists
                 </Link>
               </li>
               <li>
-                <Link href="/performers" className="text-[#D9C178] hover:text-[#FFF8D9] transition-colors duration-200 font-sans">
+                <Link href="/performers" className="text-[16px] text-[#D9C178] hover:text-[#FFF8D9] transition-colors duration-200 font-dwpica">
                   Performers
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-[#D9C178] hover:text-[#FFF8D9] transition-colors duration-200 font-sans">
+                <Link href="/contact" className="text-[16px] text-[#D9C178] hover:text-[#FFF8D9] transition-colors duration-200 font-dwpica">
                   Contact Us
                 </Link>
               </li>
@@ -42,14 +42,14 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-gothic font-semibold mb-4">Get in Touch</h4>
-            <p className="text-[#D9C178] font-sans">
+            <h4 className="text-[20px] font-imfell font-bold mb-4">Get in Touch</h4>
+            <p className="text-[16px] text-[#D9C178] font-dwpica">
               For more information about the festival and how to get involved.
             </p>
             <div className="mt-4">
               <Link 
                 href="/contact" 
-                className="inline-block bg-[#D9C178] text-[#245451] px-6 py-2 rounded-md hover:bg-[#ECD35A] transition-colors duration-200 font-sans"
+                className="inline-block bg-[#D9C178] text-[#245451] px-6 py-2 rounded-md hover:bg-[#ECD35A] transition-colors duration-200 font-dwpica text-[20px]"
               >
                 Contact Us
               </Link>
@@ -58,7 +58,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-[#245451] mt-8 pt-8 text-center">
-          <p className="text-[#93AD67] font-sans">
+          <p className="text-[20px] text-[#93AD67] font-dwpica">
             © 2025 Flights & Sounds Festival. All rights reserved.
           </p>
         </div>
