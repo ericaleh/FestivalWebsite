@@ -1,46 +1,36 @@
-export default function Artists() {
+export default function About() {
   return (
     <div className="min-h-screen">
       {/* Header Image */}
       <section className="relative h-64 md:h-96 overflow-hidden">
         {/* Header image */}
-        <img src="/about.png" alt="About Flights & Sounds" className="absolute inset-0 w-full h-full object-cover bg-[#EDDEB7]" />
+        <img src="/about.png" alt="About Flights & Sounds" className="absolute inset-0 w-full h-full object-cover bg-[#566E37]" />
       </section>
 
-      {/* Content Section */}
-      <section className="py-16 px-4 bg-[#FFF8D9]">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold font-serif text-[#432C2C] mb-4">Featured Artists</h2>
-            <p className="text-lg text-[#566E37] font-sans max-w-2xl mx-auto">
-              Our festival brings together an eclectic mix of talented artists from various genres and backgrounds. 
-              Each artist has been carefully selected to create a diverse and engaging experience for our attendees.
+      {/* Festival Description Section */}
+      <section className="py-16 px-4 bg-[#EDDEB7]">
+        <div className="max-w-4xl mx-auto">
+          <div className="space-y-8 text-center">
+            <p className="text-lg md:text-xl leading-relaxed font-sans text-[#566E37]">
+              Flights & Sounds is a festival fostering connection and community through music, art, nature, and performance. We aim to provide experiences and activities that bring joy and inspire creativity.
             </p>
-          </div>
-
-          {/* Artist Grid Placeholder */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Artist Card Placeholders */}
-            {[1, 2, 3, 4, 5, 6].map((artist) => (
-              <div key={artist} className="bg-[#D9C178] rounded-lg p-6 text-center">
-                <div className="w-32 h-32 bg-[#93AD67] rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-[#432C2C] font-sans">Artist {artist}</span>
-                </div>
-                <h3 className="text-xl font-bold font-serif text-[#432C2C] mb-2">Artist Name</h3>
-                <p className="text-[#566E37] font-sans">Genre • Location</p>
-                <p className="text-sm text-[#934D2F] font-sans mt-2">
-                  Brief description of the artist and their style.
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <p className="text-lg text-[#566E37] font-sans">
-              More artists will be announced soon. Stay tuned for updates!
+            
+            <p className="text-lg md:text-xl leading-relaxed font-sans text-[#566E37]">
+              Our festival is built from the ground up, with the creators being musicians and performers themselves. Any profits made will be split among the artists and performers who participate, as well as given to charity organizations.
             </p>
           </div>
         </div>
+        <br></br>
+        <img src="/activities.png" alt="Activities at Flights & Sounds" className="w-1/2 h-auto" />
+      </section>
+
+      {/* Activities Image */}
+      <section className="w-full">
+      </section>
+
+      {/* Border Image */}
+      <section className="w-full">
+        <img src="/border.png" alt="Border decoration" className="w-full h-auto" />
       </section>
     </div>
   );
