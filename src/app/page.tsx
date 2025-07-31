@@ -1,12 +1,18 @@
 export default function About() {
   return (
     <div className="min-h-screen">
-      {/* Header Image */}
+      {/* Header Video */}
       <div>
         {/* Thick line separator */}
-        <div className="h-1/2 bg-[#245451]"></div>
-        {/* Header image */}
-        <img src="/hero2.png" alt="About Flights & Sounds" className="w-full h-auto object-contain object-top md:h-full md:object-cover bg-[#245451]" />
+        <div className="h-full bg-[#245451]"></div>
+        {/* Header video */}
+        <video 
+          src="/bounce-hero.mp4" 
+          autoPlay 
+          muted 
+          playsInline
+          className="w-full h-auto object-contain object-top md:object-cover bg-[#245451]"
+        />
       </div>
               {/* Festival Description Section */}
       <section className="py-16 px-4 bg-[#EDDEB7]">
