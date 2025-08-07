@@ -60,26 +60,26 @@ export default function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div>
-              <h2 className="text-2xl font-bold font-imfell text-[#432C2C] mb-8">Get in Touch</h2>
+              <h2 className="text-2xl font-semibold font-gabarito text-[#432C2C] mb-8">Get in Touch</h2>
               
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-xl font-semibold font-imfell text-[#432C2C] mb-2">General Inquiries</h3>
-                  <p className="text-[#245451] font-sans text-[16px]">
+                  <h3 className="text-xl font-medium font-gabarito text-[#432C2C] mb-2">General Inquiries</h3>
+                  <p className="text-[#245451] font-gabarito font-normal text-[16px]">
                     Contact us with any questions about the festival, ticketing, or general information.
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold font-imfell text-[#432C2C] mb-2">Artist & Performer Applications</h3>
-                  <p className="text-[#245451] font-sans text-[16px]">
+                  <h3 className="text-xl font-medium font-gabarito text-[#432C2C] mb-2">Artist & Performer Applications</h3>
+                  <p className="text-[#245451] font-gabarito font-normal text-[16px]">
                     Interested in performing at Flights & Sounds? We&apos;d love to hear from you.
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold font-imfell text-[#432C2C] mb-2">Volunteer Opportunities</h3>
-                  <p className="text-[#245451] font-sans text-[16px]">
+                  <h3 className="text-xl font-medium font-gabarito text-[#432C2C] mb-2">Volunteer Opportunities</h3>
+                  <p className="text-[#245451] font-gabarito font-normal text-[16px]">
                     Want to be part of making this festival happen? Join our volunteer team.
                   </p>
                 </div>
@@ -88,43 +88,43 @@ export default function Contact() {
 
             {/* Contact Form */}
             <div>
-              <h2 className="text-2xl font-bold font-imfell text-[#432C2C] mb-8">Send us a Message</h2>
+              <h2 className="text-2xl font-semibold font-gabarito text-[#432C2C] mb-8">Send us a Message</h2>
               
               <form className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium font-sans text-[#432C2C] mb-2">
+                  <label htmlFor="name" className="block text-sm font-normal font-gabarito text-[#432C2C] mb-2">
                     Name
                   </label>
                   <input
                     type="text"
                     id="name"
                     name="name"
-                    className="w-full px-4 py-3 border border-[#245451] rounded-md focus:ring-2 focus:ring-[#EA902B] focus:border-transparent font-sans"
+                    className="w-full px-4 py-3 border border-[#245451] rounded-md focus:ring-2 focus:ring-[#EA902B] focus:border-transparent font-gabarito"
                     placeholder="Your full name"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium font-sans text-[#432C2C] mb-2">
+                  <label htmlFor="email" className="block text-sm font-normal font-gabarito text-[#432C2C] mb-2">
                     Email
                   </label>
                   <input
                     type="email"
                     id="email"
                     name="email"
-                    className="w-full px-4 py-3 border border-[#245451] rounded-md focus:ring-2 focus:ring-[#EA902B] focus:border-transparent font-sans"
+                    className="w-full px-4 py-3 border border-[#245451] rounded-md focus:ring-2 focus:ring-[#EA902B] focus:border-transparent font-gabarito"
                     placeholder="your.email@example.com"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium font-sans text-[#432C2C] mb-2">
+                  <label htmlFor="subject" className="block text-sm font-normal font-gabarito text-[#432C2C] mb-2">
                     Subject
                   </label>
                   <select
                     id="subject"
                     name="subject"
-                    className="w-full px-4 py-3 border border-[#245451] rounded-md focus:ring-2 focus:ring-[#EA902B] focus:border-transparent font-sans"
+                    className="w-full px-4 py-3 border border-[#245451] rounded-md focus:ring-2 focus:ring-[#EA902B] focus:border-transparent font-gabarito"
                   >
                     <option value="">Select a subject</option>
                     <option value="general">General Inquiry</option>
@@ -136,21 +136,21 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium font-sans text-[#432C2C] mb-2">
+                  <label htmlFor="message" className="block text-sm font-normal font-gabarito text-[#432C2C] mb-2">
                     Message
                   </label>
                   <textarea
                     id="message"
                     name="message"
                     rows={6}
-                    className="w-full px-4 py-3 border border-[#245451] rounded-md focus:ring-2 focus:ring-[#EA902B] focus:border-transparent font-sans"
+                    className="w-full px-4 py-3 border border-[#245451] rounded-md focus:ring-2 focus:ring-[#EA902B] focus:border-transparent font-gabarito"
                     placeholder="Tell us more about your inquiry..."
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-[#EA902B] text-[#432C2C] py-3 px-6 rounded-md hover:bg-[#ECD35A] transition-colors duration-200 font-sans font-semibold"
+                  className="w-full bg-[#EA902B] text-[#432C2C] py-3 px-6 rounded-md hover:bg-[#ECD35A] transition-colors duration-200 font-gabarito font-semibold"
                 >
                   Send Message
                 </button>
