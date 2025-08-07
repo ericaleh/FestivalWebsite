@@ -1,9 +1,13 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export default function About() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const verticalImageRef = useRef<HTMLImageElement>(null);
+  const horizontalImageRef = useRef<HTMLImageElement>(null);
+  const [showVerticalImage, setShowVerticalImage] = useState(false);
+  const [showHorizontalImage, setShowHorizontalImage] = useState(false);
 
   useEffect(() => {
     const updateVideoSource = () => {
@@ -15,6 +19,8 @@ export default function About() {
           videoRef.current.src = newSrc;
           videoRef.current.load();
           videoRef.current.play();
+          setShowVerticalImage(false);
+          setShowHorizontalImage(false);
         }
       }
     };
@@ -37,20 +43,36 @@ export default function About() {
         {/* Thick line separator */}
         <div className="h-1/2 bg-[#245451]"></div>
         {/* Header video container */}
-        <div className="w-full h-screen bg-black flex items-center justify-center">
+        <div className="w-full h-screen bg-black flex items-center justify-center relative overflow-hidden">
           <video 
             ref={videoRef}
             id="hero-video"
             autoPlay 
             muted 
             playsInline
-            className="h-full w-full lg:w-auto lg:max-w-[1200px] object-contain"
+            className={`h-full w-full lg:w-auto lg:max-w-[1200px] object-contain transition-opacity duration-300 ${showVerticalImage || showHorizontalImage ? 'opacity-0' : 'opacity-100'}`}
             onEnded={() => {
-              if (videoRef.current) {
-                videoRef.current.pause();
-                videoRef.current.currentTime = videoRef.current.duration;
+              const isSmallScreen = window.innerWidth < 768;
+              if (isSmallScreen) {
+                setShowVerticalImage(true);
+              } else {
+                setShowHorizontalImage(true);
               }
             }}
+          />
+          {/* Vertical end image for mobile */}
+          <img
+            ref={verticalImageRef}
+            src="/vertical-image.png"
+            alt="Flights & Sounds"
+            className={`absolute inset-0 h-full w-full object-contain transition-opacity duration-300 ${showVerticalImage ? 'opacity-100' : 'opacity-0'}`}
+          />
+          {/* Horizontal end image for desktop */}
+          <img
+            ref={horizontalImageRef}
+            src="/horizontal-end-of-video.png"
+            alt="Flights & Sounds"
+            className={`absolute inset-0 h-full w-full lg:w-auto lg:max-w-[1200px] object-contain transition-opacity duration-300 m-auto ${showHorizontalImage ? 'opacity-100' : 'opacity-0'}`}
           />
         </div>
       </div>
