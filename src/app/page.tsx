@@ -1,18 +1,58 @@
+'use client';
+
+import { useEffect, useRef } from 'react';
+
 export default function About() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const updateVideoSource = () => {
+      if (videoRef.current) {
+        const isSmallScreen = window.innerWidth < 768;
+        const newSrc = isSmallScreen ? '/vertical-video-festival.mp4' : '/bounce-hero.mp4';
+        
+        if (videoRef.current.src !== newSrc) {
+          videoRef.current.src = newSrc;
+          videoRef.current.load();
+          videoRef.current.play();
+        }
+      }
+    };
+
+    // Set initial video source
+    updateVideoSource();
+
+    // Update video source on window resize
+    window.addEventListener('resize', updateVideoSource);
+
+    return () => {
+      window.removeEventListener('resize', updateVideoSource);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen">
       {/* Header Video */}
       <div>
         {/* Thick line separator */}
-        <div className="h-full bg-[#245451]"></div>
-        {/* Header video */}
-        <video 
-          src="/bounce-hero.mp4" 
-          autoPlay 
-          muted 
-          playsInline
-          className="w-full h-auto object-contain object-top md:object-cover bg-[#245451]"
-        />
+        <div className="h-1/2 bg-[#245451]"></div>
+        {/* Header video container */}
+        <div className="w-full h-screen bg-black flex items-center justify-center">
+          <video 
+            ref={videoRef}
+            id="hero-video"
+            autoPlay 
+            muted 
+            playsInline
+            className="h-full w-full lg:w-auto lg:max-w-[1200px] object-contain"
+            onEnded={() => {
+              if (videoRef.current) {
+                videoRef.current.pause();
+                videoRef.current.currentTime = videoRef.current.duration;
+              }
+            }}
+          />
+        </div>
       </div>
               {/* Festival Description Section */}
       <section className="py-16 px-4 bg-[#EDDEB7]">
