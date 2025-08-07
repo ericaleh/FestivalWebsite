@@ -9,7 +9,7 @@ export default function About() {
     const updateVideoSource = () => {
       if (videoRef.current) {
         const isSmallScreen = window.innerWidth < 768;
-        const newSrc = isSmallScreen ? '/vertical-video-festival.mp4' : '/bounce-hero.mp4';
+        const newSrc = isSmallScreen ? '/vertical-video-3.mp4' : '/bounce-hero.mp4';
         
         if (videoRef.current.src !== newSrc) {
           videoRef.current.src = newSrc;
