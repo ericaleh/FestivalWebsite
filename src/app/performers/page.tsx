@@ -1,10 +1,12 @@
+import Image from 'next/image';
+
 export default function Artists() {
   return (
     <div className="min-h-screen">
       {/* Header Image */}
       <section className="relative h-auto overflow-hidden">
         {/* Header image */}
-        <img src="/performers-2.png" alt="About Flights & Sounds" className="relative w-full h-auto object-contain object-top bg-[#EDDEB7]" />
+        <Image src="/performers-2.png" alt="About Flights & Sounds" width={1200} height={400} className="relative w-full h-auto object-contain object-top bg-[#EDDEB7]" />
       </section>
 
       {/* Content Section */}
@@ -19,44 +21,56 @@ export default function Artists() {
           {/* Performer Pictures Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
             <div className="text-center">
-              <img 
+              <Image 
                 src="/erica-pic.png" 
                 alt="Erica performing" 
+                width={256}
+                height={256}
                 className="w-full h-64 mx-auto object-cover shadow-lg"
               />
             </div>
             <div className="text-center">
-              <img 
+              <Image 
                 src="/fire-1.jpg" 
                 alt="Fire performance" 
+                width={256}
+                height={256}
                 className="w-full h-64 mx-auto object-cover shadow-lg"
               />
             </div>
             <div className="text-center">
-              <img 
+              <Image 
                 src="/fiona-1.png" 
                 alt="Fiona performing" 
+                width={256}
+                height={256}
                 className="w-full h-64 mx-auto object-cover shadow-lg"
               />
             </div>
             <div className="text-center">
-              <img 
+              <Image 
                 src="/sammie.jpg" 
                 alt="Sammie performing" 
+                width={256}
+                height={256}
                 className="w-full h-64 mx-auto object-cover shadow-lg"
               />
             </div>
             <div className="text-center">
-              <img 
+              <Image 
                 src="/fire-4.JPG" 
                 alt="Fire performance" 
+                width={256}
+                height={256}
                 className="w-full h-64 mx-auto object-cover shadow-lg"
               />
             </div>
             <div className="text-center">
-              <img 
+              <Image 
                 src="/raff-pic.png" 
                 alt="Raff performing" 
+                width={256}
+                height={256}
                 className="w-full h-64 mx-auto object-cover shadow-lg"
               />
             </div>
@@ -72,7 +86,7 @@ export default function Artists() {
 
       {/* Border Image */}
       <section className="w-full">
-        <img src="/border.png" alt="Border decoration" className="w-full h-auto max-h-[100vh]" />
+        <Image src="/border.png" alt="Border decoration" width={1200} height={400} className="w-full h-auto max-h-[100vh]" />
       </section>
     </div>
   );

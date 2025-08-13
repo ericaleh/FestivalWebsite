@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -51,7 +52,7 @@ export default function Contact() {
       {/* Header Image */}
       <section className="relative h-auto overflow-hidden">
         {/* Header image */}
-        <img src="/contact-2.png" alt="Contact Flights & Sounds" className="relative w-full h-auto object-contain object-top bg-[#EDDEB7]" />
+        <Image src="/contact-2.png" alt="Contact Flights & Sounds" width={1200} height={400} className="relative w-full h-auto object-contain object-top bg-[#EDDEB7]" />
       </section>
 
       {/* Content Section */}

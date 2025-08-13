@@ -1,8 +1,11 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 
 export default function About() {
+  const router = useRouter();
   const videoRef = useRef<HTMLVideoElement>(null);
   const verticalImageRef = useRef<HTMLImageElement>(null);
   const horizontalImageRef = useRef<HTMLImageElement>(null);
@@ -50,7 +53,7 @@ export default function About() {
             autoPlay 
             muted 
             playsInline
-            className={`h-full w-full lg:w-auto lg:max-w-[1200px] object-contain transition-opacity duration-300 ${showVerticalImage || showHorizontalImage ? 'opacity-0' : 'opacity-100'}`}
+            className={`h-full w-full lg:w-auto lg:max-w-[1200px] object-contain transition-opacity duration-300 cursor-pointer ${showVerticalImage || showHorizontalImage ? 'opacity-0' : 'opacity-100'}`}
             onEnded={() => {
               const isSmallScreen = window.innerWidth < 768;
               if (isSmallScreen) {
@@ -59,39 +62,33 @@ export default function About() {
                 setShowHorizontalImage(true);
               }
             }}
+            onClick={() => {
+              if (showVerticalImage || showHorizontalImage) {
+                router.push('/about');
+              }
+            }}
           />
           {/* Vertical end image for mobile */}
-          <img
+          <Image
             ref={verticalImageRef}
             src="/vertical-image.png"
             alt="Flights & Sounds"
-            className={`absolute inset-0 h-full w-full object-contain transition-opacity duration-300 ${showVerticalImage ? 'opacity-100' : 'opacity-0'}`}
+            fill
+            className={`object-contain transition-opacity duration-300 cursor-pointer ${showVerticalImage ? 'opacity-100' : 'opacity-0'}`}
+            onClick={() => router.push('/about')}
           />
           {/* Horizontal end image for desktop */}
-          <img
+          <Image
             ref={horizontalImageRef}
             src="/horizontal-end-of-video.png"
             alt="Flights & Sounds"
-            className={`absolute inset-0 h-full w-full lg:w-auto lg:max-w-[1200px] object-contain transition-opacity duration-300 m-auto ${showHorizontalImage ? 'opacity-100' : 'opacity-0'}`}
+            fill
+            className={`object-contain transition-opacity duration-300 cursor-pointer ${showHorizontalImage ? 'opacity-100' : 'opacity-0'}`}
+            onClick={() => router.push('/about')}
           />
         </div>
       </div>
-              {/* Festival Description Section */}
-      <section className="py-16 px-4 bg-[#EDDEB7]">
-        <div className="max-w-6xl mx-auto">
-          <div className="space-y-4 text-center">
-            <p className="text-lg md:text-xl leading-relaxed font-gabarito text-[#245451]">
-              Flights & Sounds is a festival fostering connection and community through music, art, nature, and performance. We aim to provide experiences and activities that bring joy and inspire creativity.
-            </p>
-            
-            <p className="text-lg md:text-xl leading-relaxed font-gabarito text-[#245451]">
-              Our festival is built from the ground up, with the creators being musicians and performers themselves. Any profits made will be split among the artists and performers who participate, as well as given to charity organizations.
-            </p>
-          </div>
-        </div>
 
-      {/* Border Image */}
-      </section>
 
 
     </div>

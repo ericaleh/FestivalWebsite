@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,7 +13,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <img src="/logo3.png" alt="Flights & Sounds" className="h-8 md:h-10 w-auto" />
+            <Image src="/logo3.png" alt="Flights & Sounds" width={40} height={40} className="h-8 md:h-10 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}

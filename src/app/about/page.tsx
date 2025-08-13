@@ -1,10 +1,12 @@
+import Image from 'next/image';
+
 export default function About() {
   return (
     <div className="min-h-screen">
       {/* Header Image */}
       <section className="relative h-auto overflow-hidden">
         {/* Header image */}
-        <img src="/about-3.png" alt="About Flights & Sounds" className="relative w-full h-auto object-contain object-top bg-[#245451]" />
+        <Image src="/about-3.png" alt="About Flights & Sounds" width={1200} height={400} className="relative w-full h-auto object-contain object-top bg-[#245451]" />
       </section>
 
       {/* Festival Description Section */}
@@ -22,7 +24,7 @@ export default function About() {
         </div>
         <br></br><br></br>
         <div className="flex justify-center">
-          <img src="/activities.png" alt="Activities at Flights & Sounds" className="w-1/2 h-auto" />
+          <Image src="/activities.png" alt="Activities at Flights & Sounds" width={600} height={400} className="w-1/2 h-auto" />
         </div>
       </section>
 
@@ -32,7 +34,7 @@ export default function About() {
 
       {/* Border Image */}
       <section className="w-full">
-        <img src="/border.png" alt="Border decoration" className="w-full h-auto" />
+        <Image src="/border.png" alt="Border decoration" width={1200} height={400} className="w-full h-auto" />
       </section>
     </div>
   );
