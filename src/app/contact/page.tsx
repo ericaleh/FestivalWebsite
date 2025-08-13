@@ -51,7 +51,7 @@ export default function Contact() {
       {/* Header Image */}
       <section className="relative h-auto overflow-hidden">
         {/* Header image */}
-        <img src="/contact.png" alt="Contact Flights & Sounds" className="relative w-full h-auto object-contain object-top bg-[#EDDEB7]" />
+        <img src="/contact-2.png" alt="Contact Flights & Sounds" className="relative w-full h-auto object-contain object-top bg-[#EDDEB7]" />
       </section>
 
       {/* Content Section */}

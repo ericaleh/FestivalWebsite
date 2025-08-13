@@ -23,13 +23,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/artists" className="text-[16px] text-[#D9C178] hover:text-[#FFF8D9] transition-colors duration-200 font-gabarito">
-                  Artists
+                <Link href="/performers" className="text-[16px] text-[#D9C178] hover:text-[#FFF8D9] transition-colors duration-200 font-gabarito">
+                  Performers
                 </Link>
               </li>
               <li>
-                <Link href="/performers" className="text-[16px] text-[#D9C178] hover:text-[#FFF8D9] transition-colors duration-200 font-gabarito">
-                  Performers
+                <Link href="/team" className="text-[16px] text-[#D9C178] hover:text-[#FFF8D9] transition-colors duration-200 font-gabarito">
+                  Our Team
                 </Link>
               </li>
               <li>

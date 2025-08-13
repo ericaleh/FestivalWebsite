@@ -4,7 +4,7 @@ export default function About() {
       {/* Header Image */}
       <section className="relative h-auto overflow-hidden">
         {/* Header image */}
-        <img src="/about.png" alt="About Flights & Sounds" className="relative w-full h-auto object-contain object-top bg-[#245451]" />
+        <img src="/about-3.png" alt="About Flights & Sounds" className="relative w-full h-auto object-contain object-top bg-[#245451]" />
       </section>
 
       {/* Festival Description Section */}
@@ -16,7 +16,7 @@ export default function About() {
             </p>
             
             <p className="text-[20px] leading-relaxed font-dwpica text-[#245451]">
-              Our festival is built from the ground up, with the creators being musicians and performers themselves. Any profits made will be split among the artists and performers who participate, as well as given to charity organizations.
+              Our festival is built from the ground up, with the creators being musicians and performers themselves. Any profits made will be split among the artists and performers who participate.
             </p>
           </div>
         </div>

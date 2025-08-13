@@ -24,16 +24,16 @@ export default function Navbar() {
               About
             </Link>
             <Link 
-              href="/artists" 
-              className="text-[20px] text-[#EDDEB7] hover:text-[#934D2F] transition-colors duration-200 font-dwpica"
-            >
-              Artists
-            </Link>
-            <Link 
               href="/performers" 
               className="text-[20px] text-[#EDDEB7] hover:text-[#934D2F] transition-colors duration-200 font-dwpica"
             >
               Performers
+            </Link>
+            <Link 
+              href="/team" 
+              className="text-[20px] text-[#EDDEB7] hover:text-[#934D2F] transition-colors duration-200 font-dwpica"
+            >
+              Our Team
             </Link>
             <Link 
               href="/contact" 
@@ -72,13 +72,6 @@ export default function Navbar() {
                 About
               </Link>
               <Link 
-                href="/artists" 
-                className="text-[20px] text-[#FFF8D9] hover:text-[#ECD35A] block px-3 py-2 font-dwpica"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Artists
-              </Link>
-              <Link 
                 href="/performers" 
                 className="text-[20px] text-[#FFF8D9] hover:text-[#ECD35A] block px-3 py-2 font-dwpica"
                 onClick={() => setIsMenuOpen(false)}
@@ -86,8 +79,15 @@ export default function Navbar() {
                 Performers
               </Link>
               <Link 
-                href="/contact" 
+                href="/team" 
                 className="text-[20px] text-[#FFF8D9] hover:text-[#ECD35A] block px-3 py-2 font-dwpica"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Our Team
+              </Link>
+              <Link 
+                href="/contact" 
+                className="text-[20px] text-[#FFF8D9] hover:text-[#ECD35A] block px-3 py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact Us
