@@ -91,7 +91,7 @@ export default function Contact() {
             <div>
               <h2 className="text-2xl font-semibold font-gabarito text-[#432C2C] mb-8">Send us a Message</h2>
               
-              <form className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-normal font-gabarito text-[#432C2C] mb-2">
                     Name
@@ -100,7 +100,10 @@ export default function Contact() {
                     type="text"
                     id="name"
                     name="name"
-                    className="w-full px-4 py-3 border border-[#245451] rounded-md focus:ring-2 focus:ring-[#EA902B] focus:border-transparent font-gabarito"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-3 border border-[#245451] rounded-md focus:ring-2 focus:ring-[#EA902B] focus:border-transparent font-gabarito text-[#432C2C] placeholder-[#245451]"
                     placeholder="Your full name"
                   />
                 </div>
@@ -113,7 +116,10 @@ export default function Contact() {
                     type="email"
                     id="email"
                     name="email"
-                    className="w-full px-4 py-3 border border-[#245451] rounded-md focus:ring-2 focus:ring-[#EA902B] focus:border-transparent font-gabarito"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-3 border border-[#245451] rounded-md focus:ring-2 focus:ring-[#EA902B] focus:border-transparent font-gabarito text-[#432C2C] placeholder-[#245451]"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -125,7 +131,10 @@ export default function Contact() {
                   <select
                     id="subject"
                     name="subject"
-                    className="w-full px-4 py-3 border border-[#245451] rounded-md focus:ring-2 focus:ring-[#EA902B] focus:border-transparent font-gabarito"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-3 border border-[#245451] rounded-md focus:ring-2 focus:ring-[#EA902B] focus:border-transparent font-gabarito text-[#432C2C]"
                   >
                     <option value="">Select a subject</option>
                     <option value="general">General Inquiry</option>
@@ -144,16 +153,37 @@ export default function Contact() {
                     id="message"
                     name="message"
                     rows={6}
-                    className="w-full px-4 py-3 border border-[#245451] rounded-md focus:ring-2 focus:ring-[#EA902B] focus:border-transparent font-gabarito"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-3 border border-[#245451] rounded-md focus:ring-2 focus:ring-[#EA902B] focus:border-transparent font-gabarito text-[#432C2C] placeholder-[#245451]"
                     placeholder="Tell us more about your inquiry..."
                   ></textarea>
                 </div>
 
+                {/* Submit Status Messages */}
+                {submitStatus === 'success' && (
+                  <div className="p-4 bg-green-100 border border-green-400 text-green-700 rounded-md">
+                    Thank you! Your message has been sent successfully.
+                  </div>
+                )}
+                
+                {submitStatus === 'error' && (
+                  <div className="p-4 bg-red-100 border border-red-400 text-red-700 rounded-md">
+                    Sorry, there was an error sending your message. Please try again.
+                  </div>
+                )}
+
                 <button
                   type="submit"
-                  className="w-full bg-[#EA902B] text-[#432C2C] py-3 px-6 rounded-md hover:bg-[#ECD35A] transition-colors duration-200 font-gabarito font-semibold"
+                  disabled={isSubmitting}
+                  className={`w-full py-3 px-6 rounded-md transition-colors duration-200 font-gabarito font-semibold ${
+                    isSubmitting 
+                      ? 'bg-gray-400 text-gray-600 cursor-not-allowed' 
+                      : 'bg-[#EA902B] text-[#432C2C] hover:bg-[#ECD35A]'
+                  }`}
                 >
-                  Send Message
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                 </button>
               </form>
             </div>
