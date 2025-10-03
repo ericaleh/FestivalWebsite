@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         gabarito: ['var(--font-gabarito)'],
+        rammetto: ['var(--font-rammetto)', 'cursive'],
       },
     },
   },
