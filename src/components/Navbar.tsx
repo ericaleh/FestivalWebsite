@@ -8,12 +8,16 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-[#B25E5D] backdrop-blur-sm fixed w-full z-50">
+    <nav className="bg-[#245550] backdrop-blur-sm fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <Image src="/logo3.png" alt="Flights & Sounds" width={40} height={40} className="h-8 md:h-10 w-auto" />
+            <img 
+              src="/onset-logo.png" 
+              alt="Flights & Sounds" 
+              className="h-10 md:h-12 w-auto" 
+            />
           </Link>
 
           {/* Desktop Navigation */}
