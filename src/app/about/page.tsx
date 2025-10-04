@@ -20,7 +20,7 @@ export default function About() {
           </p></div><br></br>
 
           <div className="flex justify-center">
-          <Image src="/activities.png" alt="Activities at Flights & Sounds" width={600} height={400} className="w-1/2 h-auto" />
+          <Image src="/activities.png" alt="Activities at Onset Festival" width={600} height={400} className="w-1/2 h-auto" />
         </div><br></br>
 
           {/* Activities Image */}

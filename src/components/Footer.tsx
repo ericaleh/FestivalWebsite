@@ -7,8 +7,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Festival Info */}
           <div>
-            <h3 className="text-[20px] font-gabarito font-semibold mb-4">Flights & Sounds</h3>
-            <p className="text-[16px] text-[#D9C178] font-gabarito font-bold">
+            <h3 className="text-[20px] font-gabarito font-semibold mb-4">Onset Festival</h3>
+            <p className="text-[16px] text-[#D9C178] font-gabarito font-normal">
               Fostering connection and community through music, art, nature, and performance.
             </p>
           </div>
@@ -58,8 +58,8 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-[#245451] mt-8 pt-8 text-center">
-          <p className="text-[20px] text-[#93AD67] font-gabarito font-bold">
-            © 2025 Flights & Sounds Festival. All rights reserved.
+          <p className="text-[20px] text-[#93AD67] font-gabarito font-normal">
+            © 2025 Onset Festival. All rights reserved.
           </p>
         </div>
       </div>

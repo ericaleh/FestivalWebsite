@@ -1,6 +1,6 @@
-# Flights & Sounds Festival Website
+# Onset Festival Website
 
-A responsive website for the Flights & Sounds festival, built with Next.js and Tailwind CSS. The festival fosters connection and community through music, art, nature, and performance.
+A responsive website for the Onset Festival, built with Next.js and Tailwind CSS. The festival fosters connection and community through music, art, nature, and performance.
 
 ## Features
 
@@ -159,7 +159,7 @@ festival-website/
 
 ## License
 
-This project is private and proprietary to Flights & Sounds Festival.
+This project is private and proprietary to Onset Festival.
 
 ## Support
 

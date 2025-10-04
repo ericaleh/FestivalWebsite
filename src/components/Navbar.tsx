@@ -15,7 +15,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center">
             <Image 
               src="/onset-logo.png" 
-              alt="Flights & Sounds" 
+              alt="Onset Festival" 
               width={80}
               height={80}
               className="h-10 md:h-12 w-auto" 

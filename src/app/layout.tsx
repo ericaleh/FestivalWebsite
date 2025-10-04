@@ -12,7 +12,7 @@ const rammettoOne = Rammetto_One({
 });
 
 export const metadata: Metadata = {
-  title: "Flights & Sounds Festival",
+  title: "Onset Festival",
   description: "A festival fostering connection and community through music, art, nature, and performance.",
 };
 

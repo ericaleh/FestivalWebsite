@@ -52,7 +52,7 @@ export default function Contact() {
       {/* Header Image */}
       <section className="relative h-auto overflow-hidden">
         {/* Header image */}
-        <Image src="/contact-2.png" alt="Contact Flights & Sounds" width={1200} height={400} className="relative w-full h-auto object-contain object-top bg-[#EDDEB7]" />
+        <Image src="/contact-2.png" alt="Contact Onset Festival" width={1200} height={400} className="relative w-full h-auto object-contain object-top bg-[#EDDEB7]" />
       </section>
 
       {/* Content Section */}
@@ -74,7 +74,7 @@ export default function Contact() {
                 <div>
                   <h3 className="text-xl font-medium font-gabarito text-[#432C2C] mb-2">Artist & Performer Applications</h3>
                   <p className="text-[#245451] font-gabarito font-bold text-[16px]">
-                    Interested in performing at Flights & Sounds? We&apos;d love to hear from you.
+                    Interested in performing at Onset Festival? We&apos;d love to hear from you.
                   </p>
                 </div>
 

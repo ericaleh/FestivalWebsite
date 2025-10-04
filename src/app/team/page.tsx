@@ -6,7 +6,7 @@ export default function Team() {
       {/* Header Image */}
       <section className="relative h-auto overflow-hidden">
         {/* Header image */}
-        <Image src="/our-team.png" alt="Our Team at Flights & Sounds" width={1200} height={400} className="relative w-full h-auto object-contain object-top bg-[#EDDFB8]" />
+        <Image src="/our-team.png" alt="Our Team at Onset Festival" width={1200} height={400} className="relative w-full h-auto object-contain object-top bg-[#EDDFB8]" />
       </section>
 
       {/* Content Section */}
@@ -14,7 +14,7 @@ export default function Team() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[20px] text-[#245451] font-gabarito font-bold max-w-2xl mx-auto">
-              Meet the passionate team behind Flights & Sounds Festival.
+              Meet the passionate team behind Onset Festival.
             </p>
           </div>
 

@@ -1,4 +1,4 @@
-# Media Assets for Flights & Sounds Festival
+# Media Assets for Onset Festival
 
 This directory should contain the following media files:
 

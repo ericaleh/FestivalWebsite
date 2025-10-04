@@ -6,7 +6,7 @@ export default function Artists() {
       {/* Header Image */}
       <section className="relative h-auto overflow-hidden">
         {/* Header image */}
-        <Image src="/performers.png" alt="About Flights & Sounds" width={1200} height={400} className="relative w-full h-auto object-contain object-top bg-[#EDDEB7]" />
+        <Image src="/performers.png" alt="About Onset Festival" width={1200} height={400} className="relative w-full h-auto object-contain object-top bg-[#EDDEB7]" />
       </section>
 
       {/* Content Section */}
