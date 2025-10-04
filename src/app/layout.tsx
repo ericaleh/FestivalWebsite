@@ -8,6 +8,7 @@ const rammettoOne = Rammetto_One({
   weight: '400',
   subsets: ['latin'],
   variable: '--font-rammetto',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {

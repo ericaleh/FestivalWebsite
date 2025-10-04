@@ -13,7 +13,7 @@ export default function Team() {
       <section className="pt-16 pb-16 px-4 bg-[#ECDFB8]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[20px] text-[#245451] font-gabarito max-w-2xl mx-auto">
+            <p className="text-[20px] text-[#245451] font-gabarito font-bold max-w-2xl mx-auto">
               Meet the passionate team behind Flights & Sounds Festival.
             </p>
           </div>
@@ -33,7 +33,7 @@ export default function Team() {
               </div>
               <div className="text-left space-y-3">
                 <h3 className="text-2xl font-semibold font-gabarito text-[#245451]">Erica Leh</h3>
-                <p className="text-[16px] text-[#245451] font-gabarito leading-relaxed">
+                <p className="text-[16px] text-[#245451] font-gabarito font-bold leading-relaxed">
                   Erica is an event organizer, aerialist, musician, and DJ based in Brooklyn, NY. She has helped organize and perform in events around NYC, both as an aerialist and DJ. She has previously run Yale&apos;s Spring Festival, featuring artists such as Diplo, Jessie J, Passion Pit, and T-Pain, and has assisted with and performed in the Keep the Dream Alive charity stream, which has raised upwards of $20K for Detroit youth. She has worked in the music industry for the past 8 years, both at Groover and Spotify.
                 </p>
               </div>
@@ -52,7 +52,7 @@ export default function Team() {
               </div>
               <div className="text-left space-y-3">
                 <h3 className="text-2xl font-semibold font-gabarito text-[#245451]">Raphael Estrach</h3>
-                <p className="text-[16px] text-[#245451] font-gabarito leading-relaxed">
+                <p className="text-[16px] text-[#245451] font-gabarito font-bold leading-relaxed">
                   Raff is a music producer, DJ, VJ, and engineer from Bordeaux, France, focusing on electronic funk, soul, hip hop, and bass music. He has DJ&apos;d at venues and parties across the globe, and performs in and helps run the Keep the Dream Alive charity stream. He also helps run a music production community, where he teaches and collaborates with other artists learning music production. He has worked in the music industry for 11 years, as part of Niland and Spotify.
                 </p>
               </div>

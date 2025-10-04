@@ -26,25 +26,25 @@ export default function Navbar() {
           <div className="hidden md:flex space-x-8">
             <Link 
               href="/about" 
-              className="text-[20px] text-[#EDDEB7] hover:text-[#934D2F] transition-colors duration-200 font-dwpica"
+              className="text-[20px] text-[#EDDEB7] hover:text-[#934D2F] transition-colors duration-200 font-dwpica font-bold"
             >
               About
             </Link>
             <Link 
               href="/performers" 
-              className="text-[20px] text-[#EDDEB7] hover:text-[#934D2F] transition-colors duration-200 font-dwpica"
+              className="text-[20px] text-[#EDDEB7] hover:text-[#934D2F] transition-colors duration-200 font-dwpica font-bold"
             >
               Performers
             </Link>
             <Link 
               href="/team" 
-              className="text-[20px] text-[#EDDEB7] hover:text-[#934D2F] transition-colors duration-200 font-dwpica"
+              className="text-[20px] text-[#EDDEB7] hover:text-[#934D2F] transition-colors duration-200 font-dwpica font-bold"
             >
               Our Team
             </Link>
             <Link 
               href="/contact" 
-              className="text-[20px] text-[#EDDEB7] hover:text-[#934D2F] transition-colors duration-200 font-dwpica"
+              className="text-[20px] text-[#EDDEB7] hover:text-[#934D2F] transition-colors duration-200 font-dwpica font-bold"
             >
               Contact Us
             </Link>

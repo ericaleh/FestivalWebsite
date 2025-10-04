@@ -6,14 +6,14 @@ export default function Artists() {
       {/* Header Image */}
       <section className="relative h-auto overflow-hidden">
         {/* Header image */}
-        <Image src="/performers-2.png" alt="About Flights & Sounds" width={1200} height={400} className="relative w-full h-auto object-contain object-top bg-[#EDDEB7]" />
+        <Image src="/performers.png" alt="About Flights & Sounds" width={1200} height={400} className="relative w-full h-auto object-contain object-top bg-[#EDDEB7]" />
       </section>
 
       {/* Content Section */}
       <section className="pt-16 pb-16 px-4 bg-[#ECDFB8]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[20px] text-[#245451] font-gabarito max-w-4xl mx-auto leading-relaxed">
+            <p className="text-[20px] text-[#245451] font-gabarito font-bold max-w-4xl mx-auto leading-relaxed">
               Our festival brings together an eclectic mix of talented musicians from various genres and backgrounds, as well as talented aerial and fire performers. Each artist has been carefully selected to create a unique and engaging experience for our attendees.
             </p>
           </div>
@@ -77,7 +77,7 @@ export default function Artists() {
           </div>
           
           <div className="text-center mt-12">
-            <p className="text-[20px] text-[#245451] font-gabarito">
+            <p className="text-[20px] text-[#245451] font-gabarito font-bold">
               The full list of artists and performers will be announced in 2026. Stay tuned for updates!
             </p>
           </div>
