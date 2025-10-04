@@ -16,11 +16,16 @@ export default function About() {
             <p className="text-[20px] leading-relaxed font-rammetto text-[#245451] font-sans font-bold">
               This is the Onset of something new.<br /><br />
               Join us for a weekend escape in the Berkshires at Camp Timber Trails on September 18–20, 2026.<br /><br />
+              
+              <div className="flex justify-center my-6">
+                <Image src="/ctt-2.png" alt="Camp Timber Trails" width={800} height={400} className="w-3/4 h-auto" />
+              </div>
+              
               At Onset Festival, we&apos;re fostering connection and community through music, art, nature, and performance. Our festival is built from the ground up, with the creators being musicians and performers themselves. We aim to provide experiences and activities that bring joy and inspire creativity.
           </p></div><br></br>
 
           <div className="flex justify-center">
-          <Image src="/activities.png" alt="Activities at Onset Festival" width={600} height={400} className="w-1/2 h-auto" />
+          <Image src="/activities.png" alt="Activities at Onset Festival" width={600} height={400} className="w-3/4 h-auto" />
         </div><br></br>
 
           {/* Activities Image */}

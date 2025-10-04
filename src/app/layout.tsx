@@ -9,11 +9,17 @@ const rammettoOne = Rammetto_One({
   subsets: ['latin'],
   variable: '--font-rammetto',
   display: 'swap',
+  preload: false,
 });
 
 export const metadata: Metadata = {
   title: "Onset Festival",
   description: "A festival fostering connection and community through music, art, nature, and performance.",
+  icons: {
+    icon: '/onset-favicon.png',
+    shortcut: '/onset-favicon.png',
+    apple: '/onset-favicon.png',
+  },
 };
 
 export default function RootLayout({
@@ -22,8 +28,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`antialiased flex flex-col min-h-screen ${rammettoOne.variable}`}>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`antialiased flex flex-col min-h-screen ${rammettoOne.variable}`} suppressHydrationWarning>
         <Navbar />
         <main className="pt-16 flex-1">
           {children}
