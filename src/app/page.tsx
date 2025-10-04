@@ -20,29 +20,21 @@ export default function About() {
       setIsMediumScreen(width >= 750 && width < 1178);
     };
     
-    const updateVideoSource = () => {
-      if (videoRef.current) {
-        const newSrc = '/onset-4.mp4';
-        
-        if (videoRef.current.src !== newSrc) {
-          videoRef.current.src = newSrc;
-          videoRef.current.load();
-          videoRef.current.play();
-        }
-      }
-    };
-    
     checkScreenSize();
-    updateVideoSource();
-    
     window.addEventListener('resize', checkScreenSize);
-    window.addEventListener('resize', updateVideoSource);
     
     return () => {
       window.removeEventListener('resize', checkScreenSize);
-      window.removeEventListener('resize', updateVideoSource);
     };
   }, []);
+
+  // Handle video loading after mount
+  useEffect(() => {
+    if (isMounted && isLargeScreen && videoRef.current) {
+      videoRef.current.load();
+      videoRef.current.play().catch(console.error);
+    }
+  }, [isMounted, isLargeScreen]);
 
   return (
     <div className="min-h-screen">
@@ -54,6 +46,7 @@ export default function About() {
             <video 
               ref={videoRef}
               id="hero-video"
+              src="/onset-4.mp4"
               autoPlay 
               muted 
               playsInline
@@ -62,7 +55,7 @@ export default function About() {
             />
           ) : isMounted && isMediumScreen ? (
             <Image
-              src="/hero-mobile.png"
+              src="/onset-hero.png"
               alt="Onset Festival Hero"
               fill
               className="object-cover cursor-pointer"
